@@ -10,3 +10,6 @@ class Kiwoom(QWidget, metaclass=Singleton): # QMainWindow : PyQt5에서 윈도�
         ################ 로그인 관련 정보
         self.kiwoom = QAxWidget('KHOPENAPI.KHOpenAPICtrl.1') # CLSID
         #출처: https://auto-trading.tistory.com/entry/주식자동매매-8강-키움-로그인-문제-해결하기싱글턴-singleton [경제적 자유(주식자동매매, 파이썬 코딩):티스토리]
+
+        ################ 전체 공유 데이터
+        self.All_Stock_Code = dict()
